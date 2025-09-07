@@ -14,11 +14,11 @@
      <thead>
          <!-- Розмітка заголовка стовпців -->
           <tr>
-            <th scope="col">Food categories</th>
-            <th colspan="2">For 1 person for a month</th>
+            <th scope="col" rowspan="2">Food categories</th>
+            <th scope="colgroup" colspan="2">For 1 person for a month</th>
           </tr>
       <tr>
-        <th></th>
+        <!-- <th></th> -->
         <th scope="col">Quaintity in kg</th>
         <th scope="col">Price</th>
       </tr>
@@ -64,6 +64,66 @@
         <td>919</td>
       </tr>
       </tfoot>
+    </table>
+     <table class="schedule">
+      <caption>
+        Class Schedule
+      </caption>
+
+      <thead>
+        <tr>
+          <th rowspan="2" scope="col">Time</th>
+          <th colspan="5" scope="colgroup">Classes</th>
+        </tr>
+        <tr>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th rowspan="2" scope="rowgroup">9:00 - 11:00</th>
+          <td>Math</td>
+          <td rowspan="2">Science</td>
+          <td>English</td>
+          <td rowspan="2">History</td>
+          <td>Gym</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>Biology</td>
+          <td>Geography</td>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="rowgroup">11:30 - 13:30</th>
+          <td>Physics</td>
+          <td>Art</td>
+          <td rowspan="2">Physics</td>
+          <td>Science</td>
+          <td rowspan="2">Chemistry</td>
+        </tr>
+        <tr>
+          <td>Gym</td>
+          <td>Chemistry</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <th scope="row">13:30 - 14:00</th>
+          <td colspan="5">Lunch</td>
+        </tr>
+        <tr>
+          <th scope="row">14:00 - 15:00</th>
+          <td>Geography</td>
+          <td>Biology</td>
+          <td>Geography</td>
+          <td>Art</td>
+          <td>English</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>

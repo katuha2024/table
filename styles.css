@@ -40,3 +40,13 @@ h1 {
 .products tbody tr:nth-child(even){
     background-color: lightgrey;
 }
+/* practick */
+.schedule {
+    border-collapse: collapse;
+    width: 400px;
+    justify-content: center;
+}
+.schedule tr td{
+    border: 2px solid #2a2a2a;
+    text-align: center;
+}
