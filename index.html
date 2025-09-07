@@ -3,17 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Table</title>
+    
   </head>
   <body>
-    <table>
-      <!-- Розмітка заголовка стовпців -->
+    <h1>HTML tables</h1>
+    <table class="products">
+        <caption>Minimalist food list for the balanced diet</caption>
+     <thead>
+         <!-- Розмітка заголовка стовпців -->
+          <tr>
+            <th scope="col">Food categories</th>
+            <th colspan="2">For 1 person for a month</th>
+          </tr>
       <tr>
-        <th>Food categories</th>
-        <th>Quaintity in kg</th>
-        <th>Price</th>
+        <th></th>
+        <th scope="col">Quaintity in kg</th>
+        <th scope="col">Price</th>
       </tr>
-      <!-- основний вміст -->
+     </thead>
+      <tbody>
+        <!-- основний вміст -->
       <tr>
         <td>Groceries</td>
         <td>10,1</td>
@@ -44,12 +55,15 @@
         <td>0,2</td>
         <td>10</td>
       </tr>
-      <!-- рядок підсумок -->
+      </tbody>
+      
+      <tfoot>
+        <!-- рядок підсумок -->
       <tr>
-        <th>Total price</th>
-        <td></td>
+        <th scope="row" colspan="2">Total price</th>
         <td>919</td>
       </tr>
+      </tfoot>
     </table>
   </body>
 </html>

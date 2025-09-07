@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "system-ui", sans-serif;
+  color: #2a2a2a;
+  background-color: burlywood;
+}
+h1 {
+  text-align: center;
+}
+.products {
+  border-collapse: collapse;
+  width: 400px;
+  justify-content: center;
+}
+.products th,
+.products td {
+  border: 2px solid #2a2a2a;
+}
+.products caption {
+  margin-bottom: 10px;
+  caption-side: top;
+}
+.products thead ,
+.products tfoot{
+  background-color: aqua;
+}
+.products thead tr:hover th,
+.products tfoot tr:hover th {
+  background-color: orangered;
+}
+.products tbody td:hover{
+    background-color: orangered;
+}
+.products tbody tr:nth-child(odd){
+    background-color: darkslategrey;
+    color: white;
+}
+.products tbody tr:nth-child(even){
+    background-color: lightgrey;
+}
